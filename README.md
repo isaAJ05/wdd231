@@ -52,6 +52,4 @@ _I will be adding my projects and assignments here throughout the semester._
 
 ---
 
-_This repository documents my learning journey and projects throughout the semester._
-
 _This repository contains coursework and projects developed throughout the semester._
