@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Web Frontend Development I – Isabella Arrieta</title>
+    <meta name="description" content="WDD 231 – Web Frontend Development I Isabella Arrieta, This is a page about me">
+    <meta name="author" content="Isabella Arrieta">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburguer.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="images/sunflower-svgrepo-com.svg" alt="Isabella Arrieta logo">
+            <span>Isabella Arrieta</span>
+        </div>
+        <button type="button" id="menu" title="Hambutton"></button>
+        <nav>
+            <ul class="navigation">
+			<li><a href="#" class="home">Home</a></li>
+			<li><a href="#" class="chamber">Chamber Project</a></li>
+			<li><a href="#" class="final">Final Project</a></li>
+		</ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <div class="rectangle">
+                <h2>About Me</h2>
+            </div>
+            <div class="presentation">
+            <p>My name is Isabella Arrieta, I'm 20 years old. I was born in Barranquilla, Colombia and I live with my parents, grandmother and brother. I enjoy reading, listening to music, spending time with my family and friends, and learning new things. I'm excited to gain more knowledge in this field. One day, I hope to inspire others through my own creations, such as websites and programs. Technology is truly one of the greatest blessings of this century.</p>
+            <h2>Student Photo</h2>
+            <img src ="images/isa.jpg" alt="Isabella Arrieta picture">
+            </section>
+        <section class="card">
+            <div class="rectangle">
+                <h2>Web Certificate Courses</h2>
+            </div>
+                <ul>
+                <li><a href="">All</a></li>
+                <li><a href="">CSE</a></li>
+                <li><a href="">WDD</a></li>
+                <li><a href="">WDD 130</a></li>
+                <li><a href="">WDD 131</a></li>
+                <li><a href="">WDD 231</a></li>
+            </ul>
+            <p>The total credits for course listed above is 6.</p>
+            <div class ="icons">
+                <a href="https://www.linkedin.com/in/isabella-arrieta/" target="_blank"><img src="images/icons8-linkedin.svg" alt="LinkedIn icon"></a>
+                <a href="https://github.com/isaaj05" target="_blank"><img src="images/icons8-github.svg" alt="GitHub icon"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            ©️<span id="currentyear"></span> 🌻 Isabella Arrieta 🌻 Barranquilla, Colombia
+        </p>
+        <p class="last-modified">
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,185 @@
+:root {
+    --primary-color: #231942;
+    --secondary-color: #5e548e;
+    --font: "Lato", sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: var(--font);
+}
+h1 {
+	text-align: left;
+	color: var(--primary-color);
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	position: left;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: #fff;
+	text-align: center;
+	margin: 1rem;
+	}
+header {
+    position: relative;
+	
+}
+nav {
+	margin: 1rem auto;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+  top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖️";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--secondary-color);
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+.card {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 1rem;
+	margin: 1rem auto;
+	height: 400px;
+	background-color: #f9f9f9;
+}
+
+
+.rectangle{
+	padding: 0.1rem;
+	background-color: var(--secondary-color);
+	
+}
+
+.card img{
+	width: 200px;
+	height: auto;
+	display: block;
+	margin: 1rem auto;
+}
+#all, #cse , #wdd {
+	background-color: var(--primary-color);
+	color: #fff;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding:  1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+
+}
+
+#all:hover, #cse:hover , #wdd:hover {
+	background-color: #ccc9dc;
+    cursor: pointer;
+	border: 1px solid gray;
+	border-radius: 2px;
+	color: #333;
+	font-weight: 700;
+}
+#courses{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: var(--secondary-color);
+	color: #000;
+	height: 75px;
+	MA
+}
+.completed{
+	background-color: var(--secondary-color);
+	color: white;
+	font-weight: 700;
+}
+footer {
+    color:  #fff;
+    text-align: center;
+}
+footer p {
+    background: var(--secondary-color);
+}
+.last-modified {
+    font-size: 0.8rem;
+    color: yellow;
+	padding-bottom: 1rem;
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+
+	 main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+		
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+	
+	main section:last-of-type {
+    grid-column: 1 / -1;
+	text-align: center;
+    }
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+}
