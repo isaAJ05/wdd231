@@ -28,7 +28,6 @@ const displayProphets = (prophets) => {
 
         card.appendChild(fullName);
         card.appendChild(birthDate);
-        card.appendChild(birthPlace);
         card.appendChild(portrait);
         
         cards.appendChild(card);

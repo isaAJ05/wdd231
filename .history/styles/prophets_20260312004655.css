@@ -1,12 +1,11 @@
 /* see auto column grid in CSS in the .grid class rule */
 :root {
-    --primary-color: #ccc9dc;
-    --secondary-color: #5432bb;
+    --primary-color: #231942;
+    --secondary-color: #5e548e;
     --font: "Lato", sans-serif;
 }
 body {
 	font-family: Roboto, sans-serif;
-	color: var(--secondary-color);
 }
 
 h1 {
@@ -59,7 +58,7 @@ p {
 section {
 	margin: 0.5rem;
 	padding: 0.5rem;
-	background-color: var(--primary-color);
+	background-color: var();
 	border: 1px solid rgb(0 0 0 / 10%);
 	display: flex;
 	flex-direction: column;

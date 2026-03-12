@@ -1,12 +1,12 @@
 /* see auto column grid in CSS in the .grid class rule */
 :root {
     --primary-color: #ccc9dc;
-    --secondary-color: #5432bb;
+    --secondary-color: #5e548e;
     --font: "Lato", sans-serif;
 }
 body {
 	font-family: Roboto, sans-serif;
-	color: var(--secondary-color);
+	color:
 }
 
 h1 {
