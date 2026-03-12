@@ -1,0 +1,13 @@
+{
+  "FamilyName": "Arrieta",
+  "DateofMoving": "2024-01-15",
+  "Number": true,
+  "courses": ["WDD231", "CSE210", "REL340"],
+  "address": {
+    "street": "123 Bedford Road",
+    "city": "Gweru",
+    "state": "Midlands Province",
+    "country": "Zimbabwe",
+    "zip": "00000"
+  }
+}

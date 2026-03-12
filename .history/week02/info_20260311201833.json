@@ -1,0 +1,18 @@
+{
+  "FamilyName": "Arrieta",
+  "DateofMoving": "2024-01-15",
+  "NumberofMembers": 2,
+  "isVisitedbyBishop": true,
+  "familyMembers":[
+    {
+    "name": "Isabella Arrieta",
+    "gender": "woman",
+    "birthdate": "2005-05-24"
+    },
+    {
+        "name": "NN",
+        "gender": "Male",
+        "birthdate": "2005-03-16"
+    }
+    ]
+}

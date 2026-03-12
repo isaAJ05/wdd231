@@ -1,0 +1,17 @@
+{
+  "FamilyName": "Arrieta",
+  "DateofMoving": "2024-01-15",
+  "NumberofMembers": 2,
+  "isVisitedbyBishop": true,
+  "courses": ["WDD231", "CSE210", "REL340"],
+  "member1": {
+    "name": "Id",
+    "gender": "Gweru",
+    "birthdate": "Midlands Province"
+  },
+  "member2": {
+    "name": "123 Bedford Road",
+    "gender": "Gweru",
+    "birthdate": "Midlands Province"
+  }
+}

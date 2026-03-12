@@ -1,0 +1,13 @@
+{
+  "name": "Sariah Lucias",
+  "age": 27,
+  "isCurrentStudent": true,
+  "courses": ["WDD231", "CSE210", "REL340"],
+  "address": {
+    "street": "123 Bedford Road",
+    "city": "Gweru",
+    "state": "Midlands Province",
+    "country": "Zimbabwe",
+    "zip": "00000"
+  }
+}
