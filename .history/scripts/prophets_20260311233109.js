@@ -1,0 +1,1 @@
+const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
