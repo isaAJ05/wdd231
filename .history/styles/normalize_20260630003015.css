@@ -117,7 +117,7 @@ nav {
 	border-radius: 2px;
 	padding:  1rem;
 	margin-top: 0.5rem;
-	margin-bottom: 0.2rem;
+
 }
 
 #all:hover, #cse:hover , #wdd:hover {
@@ -153,12 +153,9 @@ nav {
 footer {
     color:  #ffff;
     text-align: center;
-	
 }
 footer p {
     background: var(--secondary-color);
-	margin: 0;
-	padding: 0.5rem 0.1rem 0.1rem;
 	
 }
 .last-modified {

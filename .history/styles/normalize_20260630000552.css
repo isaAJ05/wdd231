@@ -86,9 +86,10 @@ nav {
 
 .card {
 	border: 1px solid #ccc;
+	border-radius: 8px;
 	padding: 1rem;
-	margin-bottom: 0.5rem;
-	height: 270px;
+	margin-bottom:  auto;
+	height: 260px;
 	background-color: #f9f9f9;
 }
 .card p{
@@ -107,7 +108,6 @@ nav {
 	height: auto;
 	display: block;
 	margin: auto;
-	border-radius:4px;
 }
 #all, #cse , #wdd {
 	background-color: var(--primary-color);
@@ -117,7 +117,8 @@ nav {
 	border-radius: 2px;
 	padding:  1rem;
 	margin-top: 0.5rem;
-	margin-bottom: 0.2rem;
+	margin-bottom: 0.5rem;
+
 }
 
 #all:hover, #cse:hover , #wdd:hover {
@@ -146,19 +147,12 @@ nav {
 	color: #fff;
 	font-weight: 700;
 }
-.text p{
-	margin-top: 4rem;
-}
-
 footer {
     color:  #ffff;
     text-align: center;
-	
 }
 footer p {
     background: var(--secondary-color);
-	margin: 0;
-	padding: 0.5rem 0.1rem 0.1rem;
 	
 }
 .last-modified {
