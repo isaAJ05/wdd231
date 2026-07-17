@@ -4,34 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barranquilla Chamber of Commerce</title>
-    <meta name="description" content="Barranquilla Chamber of Commerce, This is a page about the Chamber of Commerce of Barranquilla">
+    <meta name="description" content="Business directory of the Barranquilla Chamber of Commerce">
     <meta name="author" content="Isabella Arrieta">
-    <meta property="og:title" content="Facebook">
-    <meta property="og:description" content="Connect with friends, family and other people you know on Facebook.">
-    <meta property="og:url" content="https://www.facebook.com/">
-    <meta property="og:image" content="https://www.facebook.com/images/fb_icon_325x325.png">
-    <link rel="icon" href="chamber/images/favicon.ico">
-    <link rel="stylesheet" href="chamber/styles/directory.css">
+    <meta property="og:title" content="Barranquilla Chamber of Commerce">
+    <meta property="og:description" content="Discover local businesses, chamber members, networking opportunities, and community events in Barranquilla.">
+    <meta property="og:image" content="https://isaaj05.github.io/wdd231/chamber/images/icon.png">
+    <meta property="og:url" content="https://isaaj05.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/hamburguer.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
-    <main>
-
-    </main>
-    <footer>
-        <div class ="icons">
-                <a href="https://www.linkedin.com/in/isabella-arrieta/" target="_blank"><img src="images/icons8-linkedin.svg" alt="LinkedIn icon"></a>
-                <a href="https://github.com/isaaj05" target="_blank"><img src="images/icons8-github.svg" alt="GitHub icon"></a>
+    <header>
+        <div class="site-name">
+            <img src="images/logo2.png" alt="Barranquilla Chamber of Commerce logo">
+            <h1>Barranquilla Chamber of Commerce</h1>
         </div>
-        <p>
-            ©️<span id="currentyear"></span> 🌻 Isabella Arrieta 🌻 Barranquilla, Colombia
-        </p>
-        <p class="last-modified">
-            <span id="lastModified"></span>
-        </p>
+        <button id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Business Directory</h2>
+        <div class="view-buttons">
+            <button id="grid" aria-label="Grid View">Grid</button>
+            <button id="list" aria-label="List View">List</button>
+        </div>
+        <section id="members" class="grid">
+            
+        </section>
+    </main>
+    
+    <footer>
+        <section class="contact">
+            <p>Barranquilla Chamber of Commerce</p>
+            <p>Street 49c #72-56</p>
+            <p>contact@baqchamberofcommerce.org</p>
+            <p>605248695</p>
+        </section>
+        <section class="social">
+        <div class ="icons">
+                <a href="" target="_blank"><img src="images/icons8-facebook-50.png" alt="Facebook icon"></a>
+                <a href="" target="_blank"><img src="images/icons8-instagram-50.png" alt="Instagram icon"></a>
+                <a href="" target="_blank"><img src="images/icons8-linkedin-50.png" alt="LinkedIn icon"></a>
+        </div>
+        </section>
+        <section class="development">
+        <p>WDD231 Class Project</p>
+        <p>Isabella Arrieta</p>
+        <p>©️<span id="currentyear"></span>  Barranquilla Chamber of Commerce</p>
+        <p class="last-modified"><span id="lastModified"></span></p>
+        </section>
     </footer>
 </body>
 </html>

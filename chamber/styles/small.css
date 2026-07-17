@@ -1,0 +1,69 @@
+
+.site-name h1{
+	font-size: 1rem;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+    top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--secondary-color);
+	color: #fff;
+    padding: 0;
+}
+.navigation a {
+	display: none;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+.view-buttons button {
+    font-size: 0.85rem;
+}
+
+.member-card h2 {
+    font-size: 1.35rem;
+}
+
+.member-card p,
+.member-card a {
+    font-size: 0.85rem;
+}
+footer p{
+	font-size: 1rem;
+}
+.contact{
+	text-align: left;
+	padding-left: 1rem;
+}
+
+.social{
+	text-align: center;
+	padding: 1rem;
+}
+
+.development{
+	text-align: left;
+	padding-left: 1rem;
+}
+

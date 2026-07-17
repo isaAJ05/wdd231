@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Tecnoglass S.A.S.",
+    "address": "Avenida Circunvalar a 100 metros de la Vía 40",
+    "phonenumber": "+57 (605) 373-4000",
+    "website": "https://www.tecnoglass.com",
+    "image": "images/tecnoglass.webp",
+    "membership": 3
+  },
+  {
+    "name": "Restaurante Cucayo",
+    "address": "Carrera 49C #76-239",
+    "phonenumber": "+57 (605) 356-1122",
+    "website": "https://www.cucayofood.com",
+    "image": "images/cucayo.webp",
+    "membership": 2
+  },
+  {
+    "name": "Butifarras del Prado",
+    "address": "Calle 72 #54-10, Barrio El Prado",
+    "phonenumber": "+57 300 555-4321",
+    "website": "https://www.butifarrasdelprado.com",
+    "image": "images/butifarras.webp",
+    "membership": 1
+  },
+  {
+    "name": "Expreso Brasilia S.A.",
+    "address": "Calle 45 #35-49",
+    "phonenumber": "+57 (605) 371-3333",
+    "website": "https://www.expresobrasilia.com",
+    "image": "images/expresobrasilia.webp",
+    "membership": 3
+  },
+  {
+    "name": "Marimondas Software Studio",
+    "address": "Carrera 53 #82-45, Oficina 402",
+    "phonenumber": "+57 315 777-8899",
+    "website": "https://www.marimondassoftware.co",
+    "image": "images/marimondas.webp",
+    "membership": 2
+  },
+  {
+    "name": "Almacenes Olímpica",
+    "address": "Calle 53 #46-50",
+    "phonenumber": "+57 (605) 371-8000",
+    "website": "https://www.olimpica.com",
+    "image": "images/olimpica.webp",
+    "membership": 3
+  },
+  {
+    "name": "Artesanías del Río",
+    "address": "Gran Malecón del Río, Sector Gastronómico",
+    "phonenumber": "+57 310 444-1122",
+    "website": "https://www.artesaniasdelrio.com.co",
+    "image": "images/artesanias.webp",
+    "membership": 1
+  }
+]

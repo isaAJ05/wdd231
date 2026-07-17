@@ -1,0 +1,49 @@
+/* large view navigation **************/
+@media (min-width: 37.5em) {
+    .site-name h1{
+	font-size: 1.5rem;
+}
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+    }
+	.member-card h2 {
+    font-size: 1.3rem;
+}
+
+	.member-card p,
+	.member-card a {
+		font-size: 1rem;
+	}
+	.view-buttons button {
+        font-size: 1rem;
+    }
+	
+	footer{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+	}
+	.contact{
+		text-align: left;
+		padding-left: 2rem;
+	}
+
+	.social{
+		text-align: center;
+	}
+
+	.development{
+		text-align: right;
+		padding-right: 2rem;
+	}
+	
+}
