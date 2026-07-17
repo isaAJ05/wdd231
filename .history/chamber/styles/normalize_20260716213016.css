@@ -80,7 +80,7 @@ nav {
 }
 
 .silver {
-    color: #4A4A4A; /*darker color**/
+    color: #555555; <--darker color-->
     font-weight: bold;
 }
 
