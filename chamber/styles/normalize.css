@@ -37,6 +37,9 @@ header {
 nav {
 	margin: 1rem auto;
 }
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
 .site-name{
 	display: flex;
 	margin: 1rem;
