@@ -1,8 +1,3 @@
-:root {
-    --primary-color: #231942;
-    --secondary-color: #004aad;
-    --font: "Lato", sans-serif;
-}
 /* large view navigation **************/
 @media (min-width: 37.5em) {
     .site-name h2{
@@ -14,11 +9,13 @@
 
 	.navigation {
 		flex-direction: row;
+		background-color: #004aad;
 	}
 
 	.navigation a {
 		display: block;
 		flex: 1 1 100%;
+		background-color: #004aad;
     }
 	.member-card h2 {
     font-size: 1.3rem;
