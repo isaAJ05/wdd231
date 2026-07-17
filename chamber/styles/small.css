@@ -1,4 +1,8 @@
-
+:root {
+    --primary-color: #231942;
+    --secondary-color: #004aad;
+    --font: "Lato", sans-serif;
+}
 .site-name h2{
 	font-size: 1rem;
 	text-align: left;

@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #231942;
+    --secondary-color: #004aad;
+    --font: "Lato", sans-serif;
+}
 /* large view navigation **************/
 @media (min-width: 37.5em) {
     .site-name h1{
