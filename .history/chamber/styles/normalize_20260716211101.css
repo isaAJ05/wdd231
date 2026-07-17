@@ -18,7 +18,7 @@ main{
 	margin: 1rem;
 }
 h1 {
-	text-align: center;
+	text-align: left;
 	color: var(--secondary-color);
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
@@ -80,7 +80,7 @@ nav {
 }
 
 .silver {
-    color: rgb(128, 128, 128);
+    color: gray;
     font-weight: bold;
 }
 
@@ -91,6 +91,9 @@ nav {
 
 .member-card img {
 	padding: 1rem;
+}
+
+.member-card img {
     width: 100%;
     max-width: 340px;
     height: auto;

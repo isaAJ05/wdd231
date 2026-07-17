@@ -54,7 +54,7 @@ const displayMembers = (members) => {
 
         image.src = member.image;
         image.alt = `${member.name} image`;
-        image.loading = "lazy";
+        
         image.width = 300;
         image.height = 220;
 
