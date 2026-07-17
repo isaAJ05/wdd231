@@ -1,6 +1,7 @@
 
 .site-name h2{
 	font-size: 1rem;
+	text-align: left;
 }
 
 #menu {
@@ -31,6 +32,8 @@
 }
 .navigation a {
 	display: none;
+	background-color: var(--secondary-color);
+	color: #ffff;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
