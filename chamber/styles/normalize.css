@@ -15,7 +15,6 @@ body{
 }
 main{
 	text-align: center;
-	margin: 1rem;
 }
 h1 {
 	text-align: center;
@@ -23,6 +22,9 @@ h1 {
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 	margin-left: 0.3rem;
+}
+.directory {
+    margin: 1rem;
 }
 
 h2 {
@@ -34,9 +36,7 @@ header {
     position: relative;
 	
 }
-nav {
-	margin: 1rem auto;
-}
+
 .active::before {
 	content: "📍";  /* just a wayfinding symbol for the user */
 }
@@ -63,7 +63,7 @@ nav {
 	color: #ffff;
 	background-color: var(--secondary-color);
 }
-.navigation a:hover {
+.navigation a:hover, .rectangle a:hover {
 	background-color: #ccc9dc;
 	color: #333;
 	font-weight: 700;
@@ -105,6 +105,7 @@ nav {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:1rem;
+    margin: 1rem;
 }
 
 #members.grid .member-card{
@@ -118,6 +119,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 0;
+    margin: 1rem;
 }
 
 #members.list .member-card {
@@ -131,6 +133,40 @@ nav {
 #members.list img{
     display: none;
 }
+.hero{
+    position: relative;
+}
+
+.hero img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:cover;
+}
+.rectangle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:rgba(255,255,255,.85);
+    padding:2rem;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+.rectangle a{
+    display:inline-block;
+    margin-top:1rem;
+    padding:.9rem 1.8rem;
+    background:var(--secondary-color);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+
 footer {
     color:  #ffff;
     text-align: center;

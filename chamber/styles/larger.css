@@ -47,5 +47,7 @@
 		text-align: right;
 		padding-right: 2rem;
 	}
-	
+	.rectangle{
+	width: 500px;
+}
 }

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business directory Barranquilla Chamber of Commerce</title>
-    <meta name="description" content="Business directory of the Barranquilla Chamber of Commerce">
+    <title>Barranquilla Chamber of Commerce</title>
+    <meta name="description" content="Barranquilla Chamber of Commerce Home">
     <meta name="author" content="Isabella Arrieta">
     <meta property="og:title" content="Barranquilla Chamber of Commerce">
     <meta property="og:description" content="Discover local businesses, chamber members, networking opportunities, and community events in Barranquilla.">
@@ -20,6 +20,8 @@
     <script src="../scripts/getdates.js" defer></script>
     <script src="../scripts/hamburguer.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+    <script src="../scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,23 +32,66 @@
         <button id="menu" aria-label="Open menu"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="directory">
-            <h1>Business Directory</h1>
-        <div class="view-buttons">
-            <button id="grid" aria-label="Grid View">Grid</button>
-            <button id="list" aria-label="List View">List</button>
-        </div>
+        <section class="hero">
+            <picture>
+                <source srcset="images/baqlarge.webp" media="(min-width: 768px)">
+                <img src="images/baqsmall.webp"
+                    alt="Barranquilla City"
+                    width="1200"
+                    height="600">
+            </picture>
+            <div class="rectangle">
+                <h1>Building Strong Businesses Together</h1>
+                <p>The Barranquilla Chamber of Commerce connects entrepreneurs, companies, and innovators 
+                    through networking, resources, and opportunities that help businesses succeed.
+                </p>
+                <a href="join.html">Join Now</a>
+            </div>
         </section>
-        <section id="members" class="grid">
+        <section class="events">
+            <h2>Current Events</h2>
+
+            <h3>Caribe BIZ Forum 2026: Inspiring Global Innovation from Barranquilla</h3>
+            <p>July 20, 2026</p>
+
+            <h3>Atlantic Cluster Initiative: Accelerating Digital Transformation in SMEs</h3>
+            <p>July 21, 2026</p>
+
+            <h3>Bilingual Talent Fair: Connecting Local Professionals with Global Companies</h3>
+            <p>July 22, 2026</p>
+
+            <h3>Women in Business Mentorship Program: First Semester Launch</h3>
+            <p>July 25, 2026</p>
+
+            <h3>Exporting Bootcamp: Reaching International Markets from the Caribbean Coast</h3>
+            <p>July 29, 2026</p>
+
+        </section>
+        <section class="weather">
+            <h2>Barranquila Weather</h2>
+            <h3>Today</h3>
+            <figure>
+            <img id="weather-icon" src="" alt="">
+            </figure>
+            <p id="current-temp"></p>
+            <p id="current-desc"></p>
+            <h3>Forecast</h3>
+            <div id="forecast">
+
+            </div>
             
+
+        </section>
+        <section class="spotlights">
+
         </section>
     </main>
     
