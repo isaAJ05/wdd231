@@ -73,3 +73,11 @@ footer p{
     max-height:300px;
 	width: 320px;
 }
+.events, .spotlights, .weather{
+	font-size: 0.85rem;
+	margin-bottom: 1rem;
+}
+
+.area {
+    padding: 1.5rem 1.5rem 2rem;
+}

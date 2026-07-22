@@ -19,9 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../scripts/getdates.js" defer></script>
     <script src="../scripts/hamburguer.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
     <script src="../scripts/weather.js" defer></script>
     <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 <body>
     <header>
@@ -57,7 +57,7 @@
             </div>
         </section>
         <section class="area">
-            <section class="events">
+ <section class="events">
             <h2>Current Events</h2>
 
             <h3>Caribe BIZ Forum 2026: Inspiring Global Innovation from Barranquilla</h3>
@@ -76,24 +76,29 @@
             <p>July 29, 2026</p>
 
         </section>
+         <section class="spotlights">
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlights"></div>
+        </section>
+
+        
         <section class="weather">
             <h2>Barranquila Weather</h2>
+            <div class="today">
             <h3>Today</h3>
             <figure>
             <img id="weather-icon" src="" alt="">
             </figure>
             <p id="current-temp"></p>
             <p id="current-desc"></p>
-            <h3>Forecast</h3>
+            </div>
             <div id="forecast">
 
             </div>
         </section>
         </section>
         
-        <section class="spotlights">
-
-        </section>
     </main>
     
     <footer>
