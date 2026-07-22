@@ -188,7 +188,7 @@ header {
 .area {
     padding: 0 1.5rem 1.5rem 2rem;
     margin-left: 0;
-    background-color: #dfe7e9ba;
+    background-color: #ffffffba;
 }
 
 #forecast {
@@ -199,6 +199,9 @@ header {
 		text-align: center;
         padding: 1rem;
 	}
+    .spotlight-card {
+    margin: 1rem;
+}
 
 
 

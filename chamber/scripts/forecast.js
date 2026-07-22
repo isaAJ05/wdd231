@@ -25,17 +25,20 @@ function displayForecast(data) {
 
     data.list.forEach(item => {
         const date = new Date(item.dt_txt).toDateString();
-        if (date !== today && !days.some(day => day.date === date)) {
+
+        if (!days.some(day => day.date === date)) {
             days.push({
                 date,
                 forecast: item
             });
         }
     });
-    const forecast = days.slice(0, 3);
 
-    forecast.forEach(day => {
+    const forecast = days.slice(0, 4);
+
+    forecast.forEach((day, index) => {
         const dayof = day.forecast;
+
         const card = document.createElement("div");
         const date = document.createElement("h3");
         const icon = document.createElement("img");
@@ -44,11 +47,15 @@ function displayForecast(data) {
 
         const forecastDate = new Date(dayof.dt_txt);
 
-        date.textContent = forecastDate.toLocaleDateString("en-GB", {
-            weekday: "short",
-            day: "2-digit",
-            month: "short"
-        });
+        if (index === 0 && day.date === today) {
+            date.textContent = "Today";
+        } else {
+            date.textContent = forecastDate.toLocaleDateString("en-GB", {
+                weekday: "short",
+                day: "2-digit",
+                month: "short"
+            });
+        }
 
         icon.src = `https://openweathermap.org/img/wn/${dayof.weather[0].icon}@2x.png`;
         icon.alt = dayof.weather[0].description;
@@ -56,11 +63,7 @@ function displayForecast(data) {
         temp.textContent = `${Math.round(dayof.main.temp)} °C`;
         description.textContent = dayof.weather[0].description;
 
-        card.appendChild(date);
-        card.appendChild(icon);
-        card.appendChild(temp);
-        card.appendChild(description);
-
+        card.append(date, icon, temp, description);
         forecastContainer.appendChild(card);
     });
 }
