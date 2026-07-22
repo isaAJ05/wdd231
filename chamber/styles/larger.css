@@ -50,4 +50,12 @@
 	.rectangle{
 	width: 500px;
 }
+	.area{
+		display:grid;
+		grid-template-columns: 2fr 2fr;
+	}
+	
+	#forecast{
+		display: flex;
+	}
 }
