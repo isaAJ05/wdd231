@@ -1,6 +1,7 @@
 // here we select the elements we need to interact with
 const courseContainer = document.querySelector("#courses"); // container for the course cards
 const totalCredits = document.querySelector("#totalCredits"); // element to display total credits
+const courseDetails = document.querySelector('#course-details');
 // buttons to filter courses
 const allBtn = document.querySelector("#all");
 const cseBtn = document.querySelector("#cse");
@@ -102,9 +103,30 @@ function displayCourses(courseList) {
         `; 
 
         courseContainer.appendChild(card); // add the card to the container
+        card.addEventListener('click', () => {
+        displayCourseDetails(course);
+});
     });
 
     calculateCredits(courseList);
+}
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+
 }
 function calculateCredits(courseList) {
     const total = courseList.reduce((sum, course) => sum + course.credits, 0); // calculate the total credits by summing the credits of all courses in the list
