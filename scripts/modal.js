@@ -6,7 +6,7 @@ courses.addEventListener('click', () => {
 function displayCourseDetails(course) {
   courseDetails.innerHTML = '';
   courseDetails.innerHTML = `
-    <button id="closeModal">❌</button>
+    <button id="closeModal">✖️</button>
     <h2>${course.subject} ${course.number}</h2>
     <h3>${course.title}</h3>
     <p><strong>Credits</strong>: ${course.credits}</p>
