@@ -202,8 +202,20 @@ header {
     .spotlight-card {
     margin: 1rem;
 }
-
-
+label {
+  display: block;
+  margin-top: 1rem;
+}
+.container{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+}
+.cards{
+    
+}
+.card{
+    
+}
 
 footer {
     color:  #ffff;
