@@ -1,8 +1,23 @@
+const timestamp = document.querySelector("#timestamp");
 
-const myInfo = new URLSearchParams(window.location.search);
+timestamp.value = new Date().toISOString();
 
-document.querySelector('#results').innerHTML = `
-    <p> Appointment for ${ myInfo.get('first') } ${ myInfo.get('last') } </p>
-    <p> Proxy: ${ myInfo.get('ordinance')} on ${myInfo.get('date')} in the ${myInfo.get('location')} Temple </p>
-    <p>Your Phone: ${ myInfo.get('phone')}</p>
-    <p>Your email is: ${ myInfo.get('email') }</p>`
+const links = document.querySelectorAll("[data-modal]");
+
+links.forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const modal = document.getElementById(link.dataset.modal);
+        modal.showModal();
+    });
+});
+
+const closeButtons = document.querySelectorAll(".closeModal");
+
+closeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        button.closest("dialog").close();
+    });
+});
+

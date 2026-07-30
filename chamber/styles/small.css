@@ -81,3 +81,8 @@ footer p{
 .area {
     padding: 1.5rem 1.5rem 2rem;
 }
+.container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:2rem;
+}

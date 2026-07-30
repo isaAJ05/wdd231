@@ -19,9 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../scripts/getdates.js" defer></script>
     <script src="../scripts/hamburguer.js" defer></script>
-    <script src="../scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -44,59 +42,108 @@
         <section class="container">
             <form method="get" action="thankyou.html">
             <fieldset>
-                <label for="firstName">First Name:</label>
-                <input name="firstName" id="firstName" type="text" autocomplete="given-name" />
+                <legend>Membership Application</legend>
+                <label for="firstName">First Name*</label>
+                <input name="firstName" id="firstName" type="text" autocomplete="given-name" required title="Enter your first name"/>
 
-                <label for="lastName">Last Name:</label>
-                <input name="lastName" id="lastName" type="text" autocomplete="family-name" />
+                <label for="lastName">Last Name*</label>
+                <input name="lastName" id="lastName" type="text" autocomplete="family-name" required title="Enter your last name"/>
                 
-                <label for="organizationTitle">Organization Title:</label>
-                <input name="organizationTitle" id="organizationTitle" type="text" autocomplete="organization-title" />
+                <label for="organizationTitle">Organization Title*</label>
+                <input id="organizationTitle" name="organizationTitle" type="text" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Only letters, spaces and hyphens. Minimum 7 characters.">
                 
-                <label for="email">Email:</label>
-                <input name="email" id="email" type="email" placeholder="juan@youremail.com" required/>
+                <label for="email">Email*</label>
+                <input name="email" id="email" type="email" placeholder="juan@youremail.com" required autocomplete="email" title="Enter your email address"/>
                 
-                <label for="tel">Phone:</label>
-                <input name="tel" id="tel" type="tel" autocomplete="tel" required/>
+                <label for="tel">Phone*</label>
+                <input name="tel" id="tel" type="tel" autocomplete="tel" required title="Enter your mobile phone number"/>
                 
-                <label for="organization">Business Name:</label>
-                <input name="organization" id="organization" type="text" autocomplete="organization" required/>
+                <label for="organization">Business Name*</label>
+                <input name="organization" id="organization" type="text" autocomplete="organization" required title="Enter your business name"/>
                 
-                <label for="membership">Membership</label>
-                <select id="membership" name="membership" title="membership" required>
-                <option value="" disabled selected>Select a Level ...</option>
+                <label for="membership">Membership*</label>
+                <select id="membership" name="membership" required title="Select a membership level">
+                    <option value="" selected disabled>
+                        Select a Membership Level
+                    </option>
+
+                    <option value="np">
+                        NP Membership
+                    </option>
+
+                    <option value="bronze">
+                        Bronze Membership
+                    </option>
+
+                    <option value="silver">
+                        Silver Membership
+                    </option>
+
+                    <option value="gold">
+                        Gold Membership
+                    </option>
                 </select>
                 
                 <label for="descriptionOrg">Business/organization's description</label>
-                <textarea id="descriptionOrg" name="descriptionOrg" rows="4"></textarea>
+                <textarea id="descriptionOrg" name="descriptionOrg" rows="4" title="Describe your business"></textarea>
                 
                 <input type="hidden" id="timestamp" name="timestamp">
                 <button type="submit">Apply for Membership</button>
                 
             </fieldset>
-        </form>
-        <h2>Membership Levels</h2>
-        <div class="cards">
-            <div class="card">
-            <h3>Non Profit Membership Level</h3>
-            <button>Learn More</button>
-        </div>
-         <div class="card">
-            <h3>Bronze Membership Level</h3>
-            <button>Learn More</button>
-        </div>
-         <div class="card">
-            <h3>Silver Membership Level</h3>
-            <button>Learn More</button>
-        </div>
-         <div class="card">
-            <h3>Gold Membership Level</h3>
-            <button>Learn More</button>
-        </div>
-        </div>
-        
-        </section>
-        
+            </form>
+            <aside class="membership-levels">
+                <h2>Membership Levels</h2>
+                <div class="cards">
+                    <div class="card">
+                    <h3>Non Profit Membership Level</h3>
+                    <a href="#" data-modal="npModal">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Bronze Membership Level</h3>
+                    <a href="#" data-modal="bronzeModal">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Silver Membership Level</h3>
+                    <a href="#" data-modal="silverModal">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Gold Membership Level</h3>
+                    <a href="#" data-modal="goldModal">Learn More</a>
+                </div>
+            </aside>
+        </section> 
+        <dialog id="npModal">
+            <h2>NP Membership</h2>
+            <p>✔ Free membership</p>
+            <p>✔ Access to networking events</p>
+            <p>✔ Community newsletters</p>
+            <button class="closeModal">✖︎</button>
+        </dialog>
+
+        <dialog id="bronzeModal">
+            <h2>Bronze Membership</h2>
+            <p>✔ Everything in NP</p>
+            <p>✔ Business listing</p>
+            <p>✔ Training workshops</p>
+            <button class="closeModal">✖︎</button>
+        </dialog>
+
+        <dialog id="silverModal">
+            <h2>Silver Membership</h2>
+            <p>✔ Everything in Bronze</p>
+            <p>✔ Event discounts</p>
+            <p>✔ Spotlight opportunities</p>
+            <button class="closeModal">✖︎</button>
+        </dialog>
+
+        <dialog id="goldModal">
+            <h2>Gold Membership</h2>
+            <p>✔ Everything in Silver</p>
+            <p>✔ Premium advertising</p>
+            <p>✔ Featured on homepage</p>
+            <button class="closeModal">✖︎</button>
+        </dialog>
     </main>
     
     <footer>
