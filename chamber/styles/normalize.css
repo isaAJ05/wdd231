@@ -39,8 +39,11 @@ header {
 	
 }
 
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+.active::after {
+	content: "";
+	display: block;
+	height: 3px;
+	background-color: #498cb0;
 }
 .site-name{
 	display: flex;
@@ -414,7 +417,7 @@ dialog strong {
 
 }
 .cards a{
-    color: black;
+    color: white;
 }
 
 .thanks-page{
