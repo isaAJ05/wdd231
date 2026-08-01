@@ -413,6 +413,9 @@ dialog strong {
     }
 
 }
+.cards a{
+    color: black;
+}
 
 .thanks-page{
     display:flex;
