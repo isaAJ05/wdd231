@@ -19,18 +19,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../scripts/getdates.js" defer></script>
     <script src="../scripts/hamburguer.js" defer></script>
-    <script src="../scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/thanks.js" defer></script>
 </head>
 <body>
-    <main>
-        <h1>Thank you!</h1>
-        <p>We appreciate your application.</p>
-
+    <header>
+        <div class="site-name">
+            <img src="images/logo2.svg" alt="Barranquilla Chamber of Commerce logo" width="64" height="64">
+            <h2>Barranquilla Chamber of Commerce</h2>
+        </div>
+        <button id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="thanks-page">
+    <section class="thanks-card">
+        <div class="check">✓</div>
+        <h1>Application Submitted!</h1>
+        <p class="message">
+            Thank you for applying to join the
+            <strong>Barranquilla Chamber of Commerce.</strong>
+            We've successfully received your application.
+        </p>
         <div id="results"></div>
-        
+        <a href="join.html" class="join-btn">
+            Go back
+        </a>
+    </section>
     </main>
     
     <footer>

@@ -2,6 +2,7 @@
     --primary-color: #231942;
     --secondary-color: #004aad;
     --font: "Lato", sans-serif;
+    
 }
 * {
 	margin: 0;
@@ -10,6 +11,7 @@
 }
 body{
 	font-family: var(--font);
+    background:#00000000;
 	
 	
 }
@@ -202,21 +204,55 @@ header {
     .spotlight-card {
     margin: 1rem;
 }
+
+.join-hero{
+    padding:3rem 2rem;
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #004aad,
+        #0d6efd
+    );
+
+    color:white;
+}
+
+.join-hero h1{
+    color:white;
+    font-size:2.4rem;
+    margin-bottom:1rem;
+}
+
+.join-hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+    line-height:1.6;
+}
+
 label {
     display: block;
     margin-top: 1rem;
     font-weight: 600;
-    color: var(--primary-color);
-    text-align: center;
+    color: #403f3f;
+    text-align: left;
 }
 input, select, textarea {
-    width: 50%;
-    padding: .8rem;
+    width: 100%;
+    padding: .5rem;
     margin-top: .3rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:var(--secondary-color);
+    box-shadow:0 0 10px rgba(0,74,173,.2);
 }
 
 button[type="submit"] {
@@ -233,20 +269,21 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: var(--primary-color);
+    background:#00357a;
 }
-
+form {
+    margin: 2rem;
+}
 fieldset {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin: 3rem;
+    border:none;
 }
 
-legend {
-    padding: 0 .5rem;
-    font-weight: bold;
-    color: var(--secondary-color);
+legend{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:var(--secondary-color);
+    margin-bottom:1rem;
+    text-align: left;
 }
 
 
@@ -255,12 +292,15 @@ legend {
     grid-template-columns: 2fr 2fr;
 }
 dialog {
+    position: fixed;
+    inset: 0;
+    margin: auto;
     border: none;
     border-radius: 16px;
     padding: 2rem;
     width: min(90%, 550px);
     background: #fff;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, .25);
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
     animation: fadeIn .3s ease;
 }
 @keyframes fadeIn {
@@ -311,39 +351,134 @@ dialog strong {
     transform: scale(1.1);
 }
 
-.card {
-    background: white;
-    border-radius: 10px;
+
+.cards{
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
     padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,.12);
-
-    opacity: 0;
-    transform: translateY(25px);
-
-    animation: showCard .6s forwards;
 }
-.card:nth-child(1){animation-delay:.1s;}
-.card:nth-child(2){animation-delay:.3s;}
-.card:nth-child(3){animation-delay:.5s;}
-.card:nth-child(4){animation-delay:.7s;}
 
-@keyframes showCard{
+.card{
+    color: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0,0,0,.18);
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideIn .8s forwards;
+}
+.npjoin{
+    background: linear-gradient(135deg,#0f766e,#14b8a6);
+}
+
+.bronzejoin{
+    background: linear-gradient(135deg,#8d5524,#c68642);
+}
+
+.silverjoin{
+    background: linear-gradient(135deg,#5f6c7b,#aeb6bf);
+}
+
+.goldjoin{
+    background: linear-gradient(135deg,#b8860b,#ffd700);
+}
+.card:nth-child(1){
+    animation-delay:.2s;
+}
+
+.card:nth-child(2){
+    animation-delay:.4s;
+}
+
+.card:nth-child(3){
+    animation-delay:.6s;
+}
+
+.card:nth-child(4){
+    animation-delay:.8s;
+}
+
+@keyframes slideIn{
+
     from{
         opacity:0;
-        transform:translateY(25px);
+        transform:translateX(60px);
     }
+
     to{
         opacity:1;
-        transform:translateY(0);
+        transform:translateX(0);
     }
+
 }
 
-#results {
-    background-color: #F4F1DE;
-    padding: 0 1rem;
-    border: 1px solid #E07A5F;
-    border-radius: 6px;
+.thanks-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:75vh;
+    padding:2rem;
+    background:#f4f7fb;
+}
+
+.thanks-card{
+    background:white;
+    width:min(95%,700px);
+    padding:2.5rem;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.check{
+    width:90px;
+    height:90px;
+    margin:0 auto 1rem;
+    border-radius:50%;
+    background:#0ea44b;
+    color:white;
+    font-size:3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+.message{
+    margin:1rem 0 2rem;
+    line-height:1.6;
+    color:#555;
+}
+
+#results{
+    margin-top:2rem;
+    text-align:left;
+    border-top:1px solid #ddd;
+    padding-top:1.5rem;
+}
+
+#results p{
+    margin:.8rem 0;
+    padding-bottom:.5rem;
+    border-bottom:1px solid #eee;
+}
+
+.join-btn{
+    display:inline-block;
+    margin-top:2rem;
+    padding:.9rem 1.8rem;
+    background:var(--secondary-color);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.join-btn:hover{
+    background:#00357a;
 }
 
 footer {

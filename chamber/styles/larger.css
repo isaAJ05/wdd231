@@ -3,6 +3,9 @@
     .site-name h2{
 	font-size: 1.5rem;
 }
+	main section:not(.hero) {
+    margin-bottom: 2.5rem;
+}
 	#menu {
 		display: none; /* hide hamburger button */
 	}
@@ -66,5 +69,14 @@
 
 	.container{
     grid-template-columns:2fr 1fr;
+}
+	.cards{
+    gap: 1.5rem;
+}
+	.container{
+		margin-left: 3rem;
+	}
+	.membership-levels {
+    margin-right: 3rem;
 }
 }

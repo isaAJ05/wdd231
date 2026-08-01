@@ -86,3 +86,10 @@ footer p{
     grid-template-columns:1fr;
     gap:2rem;
 }
+
+.membership-levels {
+    margin-bottom: 2.5rem;
+}
+#members.grid,#members.list {
+margin-bottom: 2.5rem;
+}

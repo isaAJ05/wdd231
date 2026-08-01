@@ -38,28 +38,34 @@
         </nav>
     </header>
     <main>
-        <h1>Join the Chamber</h1>
+        <section class="join-hero">
+            <h1>Take Your Business to the Next Level</h1>
+            <p>
+                Become part of Barranquilla's business network and unlock exclusive
+                events, promotions, and growth opportunities.
+            </p>
+        </section>
         <section class="container">
             <form method="get" action="thankyou.html">
             <fieldset>
-                <legend>Membership Application</legend>
+                <legend>Business Membership Form</legend>
                 <label for="firstName">First Name*</label>
-                <input name="firstName" id="firstName" type="text" autocomplete="given-name" required title="Enter your first name"/>
+                <input name="firstName" id="firstName" type="text" placeholder="Enter your name" autocomplete="given-name" required title="Enter your first name"/>
 
                 <label for="lastName">Last Name*</label>
-                <input name="lastName" id="lastName" type="text" autocomplete="family-name" required title="Enter your last name"/>
+                <input name="lastName" id="lastName" type="text" placeholder="Enter your last name" autocomplete="family-name" required title="Enter your last name"/>
                 
-                <label for="organizationTitle">Organization Title*</label>
-                <input id="organizationTitle" name="organizationTitle" type="text" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Only letters, spaces and hyphens. Minimum 7 characters.">
+                <label for="organizationTitle">Organization Title</label>
+                <input id="organizationTitle" name="organizationTitle" type="text" placeholder="Enter your organization title" autocomplete="organization-title" title="Only letters, spaces and hyphens. Minimum 7 characters.">
                 
                 <label for="email">Email*</label>
-                <input name="email" id="email" type="email" placeholder="juan@youremail.com" required autocomplete="email" title="Enter your email address"/>
+                <input name="email" id="email" type="email" placeholder="email@email.com" required autocomplete="email" title="Enter your email address"/>
                 
                 <label for="tel">Phone*</label>
-                <input name="tel" id="tel" type="tel" autocomplete="tel" required title="Enter your mobile phone number"/>
+                <input name="tel" id="tel" type="tel" placeholder="Enter your phone" autocomplete="tel" required title="Enter your mobile phone number"/>
                 
                 <label for="organization">Business Name*</label>
-                <input name="organization" id="organization" type="text" autocomplete="organization" required title="Enter your business name"/>
+                <input name="organization" id="organization" type="text" placeholder="Enter your business name" autocomplete="organization" required title="Enter your business name"/>
                 
                 <label for="membership">Membership*</label>
                 <select id="membership" name="membership" required title="Select a membership level">
@@ -85,7 +91,7 @@
                 </select>
                 
                 <label for="descriptionOrg">Business/organization's description</label>
-                <textarea id="descriptionOrg" name="descriptionOrg" rows="4" title="Describe your business"></textarea>
+                <textarea id="descriptionOrg" name="descriptionOrg" rows="3" title="Describe your business" placeholder="Describe your business"></textarea>
                 
                 <input type="hidden" id="timestamp" name="timestamp">
                 <button type="submit">Apply for Membership</button>
@@ -93,24 +99,33 @@
             </fieldset>
             </form>
             <aside class="membership-levels">
-                <h2>Membership Levels</h2>
-                <div class="cards">
-                    <div class="card">
-                    <h3>Non Profit Membership Level</h3>
-                    <a href="#" data-modal="npModal">Learn More</a>
+                <h2>Membership Plans</h2>
+               <div class="cards">
+                <div class="card npjoin">
+                    <h3>NP Membership</h3>
+                    <p>Perfect for nonprofit organizations.</p>
+                    <a href="#" data-modal="npModal">View Benefits</a>
                 </div>
-                <div class="card">
-                    <h3>Bronze Membership Level</h3>
-                    <a href="#" data-modal="bronzeModal">Learn More</a>
+
+                <div class="card bronzejoin">
+                    <h3>Bronze Membership</h3>
+                    <p>Ideal for growing businesses.</p>
+                    <a href="#" data-modal="bronzeModal">View Benefits</a>
                 </div>
-                <div class="card">
-                    <h3>Silver Membership Level</h3>
-                    <a href="#" data-modal="silverModal">Learn More</a>
+
+                <div class="card silverjoin">
+                    <h3>Silver Membership</h3>
+                    <p>More visibility and discounts.</p>
+                    <a href="#" data-modal="silverModal">View Benefits</a>
                 </div>
-                <div class="card">
-                    <h3>Gold Membership Level</h3>
-                    <a href="#" data-modal="goldModal">Learn More</a>
+
+                <div class="card goldjoin">
+                    <h3>Gold Membership</h3>
+                    <p>Maximum exposure and premium benefits.</p>
+                    <a href="#" data-modal="goldModal">View Benefits</a>
                 </div>
+
+            </div>
             </aside>
         </section> 
         <dialog id="npModal">
