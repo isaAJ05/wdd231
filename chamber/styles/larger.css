@@ -3,6 +3,9 @@
     .site-name h2{
 	font-size: 1.5rem;
 }
+	.active::after{ 
+        width: 100%;
+    }
 	main section:not(.hero) {
     margin-bottom: 2.5rem;
 }
@@ -79,4 +82,8 @@
 	.membership-levels {
     margin-right: 3rem;
 }
+	#members.grid,#members.list {
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
 }

@@ -1,16 +1,17 @@
 :root {
     --primary-color: #32235d;
     --secondary-color: #5e548e;
-    --font: "Lato", sans-serif;
+    --font: "Raleway", sans-serif;
+	--background-color: #f2ebfb;
 }
 * {
 	padding: 0;
 	box-sizing: border-box;
 }
 body{
-	font-family: var(--font);
-	margin-top: 1rem;
-	
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: var(--font);
 }
 main{
 	text-align: center;
@@ -18,11 +19,12 @@ main{
 	margin-right: 2rem;
 }
 h1 {
-	text-align: left;
+	text-align: center;
 	color: var(--primary-color);
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 	margin-left: 0.3rem;
+    animation: glow 2s ease-in-out;
 }
 
 h2 {
@@ -32,7 +34,7 @@ h2 {
 	}
 header {
     position: relative;
-	
+	padding: 1rem 0;
 }
 nav {
 	margin: 1rem auto;
@@ -89,7 +91,7 @@ nav {
 	color: #fff;
 }
 .navigation a:hover {
-	background-color: #bbb;
+	background-color: #ccc9dc;
 	color: #333;
 	font-weight: 700;
 }
@@ -160,8 +162,13 @@ nav {
 	display: block;
 }
 
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+.active::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color: #d3cd53;
+    margin: 4px auto 0;
 }
 
 .card {
@@ -217,6 +224,7 @@ nav {
 }
 .course-card:hover{
 	background-color:var(--secondary-color);
+	color: white;
 }
 
 .course-card{

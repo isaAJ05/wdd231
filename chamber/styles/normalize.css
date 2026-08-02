@@ -1,7 +1,7 @@
 :root {
     --primary-color: #231942;
     --secondary-color: #004aad;
-    --font: "Lato", sans-serif;
+    --font: "Raleway", sans-serif;
     
 }
 * {
@@ -39,12 +39,7 @@ header {
 	
 }
 
-.active::after {
-	content: "";
-	display: block;
-	height: 3px;
-	background-color: #498cb0;
-}
+
 .site-name{
 	display: flex;
 	margin: 1rem;
