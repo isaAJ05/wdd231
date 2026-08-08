@@ -147,6 +147,7 @@ header {
     border-radius:10px;
     padding:1rem;
     text-align:center;
+    background-color: white;
 }
 
 #members.list {

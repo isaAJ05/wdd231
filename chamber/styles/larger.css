@@ -17,10 +17,10 @@
 	.discover-card{
 		overflow: hidden;
 	}
-	.discover-card img {
+	.discover-card img, #members.grid {
     transition: transform 0.3s ease;
 	}
-	.discover-card img:hover {
+	.discover-card img:hover, #members.grid img:hover {
 		transform: scale(1.03);
 	}
 
