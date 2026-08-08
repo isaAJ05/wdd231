@@ -1,4 +1,42 @@
 /* large view navigation **************/
+@media screen and (min-width: 641px) {
+
+    #attractions {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+		gap: 1rem;
+		padding: 1rem;
+		max-width: 1200px;
+		margin: 0 auto;
+    }
+	.discover-card{
+		overflow: hidden;
+	}
+	.discover-card img {
+    transition: transform 0.3s ease;
+	}
+	.discover-card img:hover {
+		transform: scale(1.03);
+	}
+
+}
+@media screen and (min-width: 1025px) {
+
+    #attractions {
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-areas:
+            "card1 card1 card2 "
+            "card3 card4 card5 "
+            "card6 card7 card8";
+    }
+
+}
 @media (min-width: 37.5em) {
     .site-name h2{
 	font-size: 1.5rem;
@@ -7,7 +45,7 @@
         width: 100%;
     }
 	main section:not(.hero) {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 	#menu {
 		display: none; /* hide hamburger button */
@@ -86,4 +124,11 @@
 		margin-left: 3rem;
 		margin-right: 3rem;
 	}
+	.directory h1, .discover h1{
+    font-size:2.4rem;
+}
+#attractions{
+	margin-bottom: 2rem;
+}
+
 }

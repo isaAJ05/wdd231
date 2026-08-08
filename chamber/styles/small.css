@@ -101,3 +101,58 @@ footer p{
 #members.grid,#members.list {
 margin-bottom: 2.5rem;
 }
+
+#attractions {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+	margin: 1rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card6 {
+    grid-area: card6;
+}
+
+.card7 {
+    grid-area: card7;
+}
+
+.card8 {
+    grid-area: card8;
+}
+
+.directory h1, .discover h1{
+    font-size:2rem;
+}
+.hero-discover p{
+	margin:1rem;
+}
