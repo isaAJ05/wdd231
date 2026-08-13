@@ -1,5 +1,6 @@
 const API_KEY = "AIzaSyAmorHY_jrPsDO5BpxtLnBVvl7oO-k7C4k";
 const FAVORITES_KEY = "bookverse-favorites";
+const BACKUP_DATA_URL = "data/books-backup.json";
 
 
 // =========================
@@ -31,15 +32,44 @@ async function searchBooks(query) {
 
         console.error("Error searching books:", error);
 
-        const container =
-            document.querySelector("#search-results");
+        try {
+            const backupResponse = await fetch(BACKUP_DATA_URL);
 
-        container.innerHTML = `
-            <p>
-                Something went wrong while searching.
-                Please try again.
-            </p>
-        `;
+            if (!backupResponse.ok) {
+                throw new Error(`Backup JSON error: ${backupResponse.status}`);
+            }
+
+            const backupData = await backupResponse.json();
+            const normalizedQuery = query.trim().toLowerCase();
+            const fallbackBooks = (backupData.items || []).filter(book => {
+                const info = book.volumeInfo || {};
+                const title = (info.title || "").toLowerCase();
+                const authors = (info.authors || []).join(" ").toLowerCase();
+                const categories = (info.categories || []).join(" ").toLowerCase();
+                const description = (info.description || "").toLowerCase();
+
+                return (
+                    title.includes(normalizedQuery) ||
+                    authors.includes(normalizedQuery) ||
+                    categories.includes(normalizedQuery) ||
+                    description.includes(normalizedQuery)
+                );
+            });
+
+            displaySearchResults(fallbackBooks);
+        } catch (backupError) {
+            console.error("Error loading backup search books:", backupError);
+
+            const container =
+                document.querySelector("#search-results");
+
+            container.innerHTML = `
+                <p>
+                    Something went wrong while searching.
+                    Please try again.
+                </p>
+            `;
+        }
     }
 }
 

@@ -1,0 +1,214 @@
+{
+  "items": [
+    {
+      "id": "bkverse-001",
+      "volumeInfo": {
+        "title": "Starlight Letters",
+        "authors": ["Maya Collins"],
+        "publishedDate": "2023",
+        "categories": ["Romance"],
+        "description": "A quiet romance that unfolds through handwritten letters and second chances.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-002",
+      "volumeInfo": {
+        "title": "The Ember Archive",
+        "authors": ["Noah Sterling"],
+        "publishedDate": "2022",
+        "categories": ["Fantasy"],
+        "description": "An apprentice archivist discovers a hidden library that controls ancient fire magic.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-003",
+      "volumeInfo": {
+        "title": "Midnight Harbor",
+        "authors": ["Ava Mercer"],
+        "publishedDate": "2021",
+        "categories": ["Mystery"],
+        "description": "A coastal town, a missing journal, and one investigator racing the tide.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-004",
+      "volumeInfo": {
+        "title": "Glass and Gold",
+        "authors": ["Elena Brooks"],
+        "publishedDate": "2020",
+        "categories": ["Historical Fiction"],
+        "description": "A story of ambition and family survival set during the rise of a powerful city.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-005",
+      "volumeInfo": {
+        "title": "Orbit of Tomorrow",
+        "authors": ["Leo Parker"],
+        "publishedDate": "2024",
+        "categories": ["Science Fiction"],
+        "description": "A crew on a long mission must decide whether to save the mission or save each other.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-006",
+      "volumeInfo": {
+        "title": "The Quiet Orchard",
+        "authors": ["Hannah Reed"],
+        "publishedDate": "2019",
+        "categories": ["Contemporary"],
+        "description": "A tender family drama about home, change, and the spaces we inherit.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-007",
+      "volumeInfo": {
+        "title": "Kingdom of Ashes",
+        "authors": ["Jasper Vale"],
+        "publishedDate": "2022",
+        "categories": ["Adventure"],
+        "description": "A rebel commander must cross a fallen kingdom to recover a stolen relic.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-008",
+      "volumeInfo": {
+        "title": "Paper Moon Dreams",
+        "authors": ["Sofia Lane"],
+        "publishedDate": "2018",
+        "categories": ["Poetry"],
+        "description": "A lyrical collection about grief, growth, and light finding its way home.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-009",
+      "volumeInfo": {
+        "title": "The Last Lantern",
+        "authors": ["Owen Hart"],
+        "publishedDate": "2021",
+        "categories": ["Thriller"],
+        "description": "A whistleblower disappears after leaving behind one lantern and a coded map.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-010",
+      "volumeInfo": {
+        "title": "Small Acts, Big Change",
+        "authors": ["Nora Price"],
+        "publishedDate": "2023",
+        "categories": ["Self-Help"],
+        "description": "Practical habits and mindset shifts for building momentum in everyday life.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-011",
+      "volumeInfo": {
+        "title": "The Hidden Meadow",
+        "authors": ["Isla Bennett"],
+        "publishedDate": "2020",
+        "categories": ["Children's"],
+        "description": "A gentle story about curiosity, courage, and a meadow only found by brave hearts.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-012",
+      "volumeInfo": {
+        "title": "Night Pages",
+        "authors": ["Caleb Foster"],
+        "publishedDate": "2024",
+        "categories": ["Horror"],
+        "description": "An anthology of eerie stories told by candlelight in a storm-battered house.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-013",
+      "volumeInfo": {
+        "title": "Founding Threads",
+        "authors": ["Emma Hughes"],
+        "publishedDate": "2017",
+        "categories": ["Biography"],
+        "description": "The life story of a creator who built a legacy through patience and persistence.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-014",
+      "volumeInfo": {
+        "title": "Map of the Inland Sea",
+        "authors": ["Daniel Cross"],
+        "publishedDate": "2016",
+        "categories": ["History"],
+        "description": "A sweeping look at the trade routes, conflicts, and cultures around a vanished sea.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    },
+    {
+      "id": "bkverse-015",
+      "volumeInfo": {
+        "title": "Cedar Hill Morning",
+        "authors": ["Grace Morgan"],
+        "publishedDate": "2024",
+        "categories": ["Romance", "Contemporary"],
+        "description": "Two neighbors rediscover joy, friendship, and love while rebuilding a small town bookstore.",
+        "imageLinks": {
+          "thumbnail": "images/no-cover.webp"
+        },
+        "previewLink": ""
+      }
+    }
+  ]
+}

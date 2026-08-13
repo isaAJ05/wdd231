@@ -1,5 +1,6 @@
 const API_KEY = "AIzaSyAmorHY_jrPsDO5BpxtLnBVvl7oO-k7C4k";
 const FAVORITES_KEY = "bookverse-favorites";
+const BACKUP_DATA_URL = "data/books-backup.json";
 
 function getFavorites() {
     try {
@@ -57,6 +58,43 @@ function toggleFavorite(book, button) {
     }
 }
 
+async function loadBackupBooks() {
+    const response = await fetch(BACKUP_DATA_URL);
+
+    if (!response.ok) {
+        throw new Error(`Backup JSON error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data.items || [];
+}
+
+function extractBackupKeyword(query) {
+    const match = query.match(/subject:([^&]+)/i);
+    return match ? decodeURIComponent(match[1]).toLowerCase() : query.toLowerCase();
+}
+
+function filterBackupBooksByCategory(category) {
+    const searchTerm = category.toLowerCase();
+
+    return loadBackupBooks().then(books =>
+        books.filter(book => {
+            const info = book.volumeInfo || {};
+            const categories = info.categories || [];
+            const title = (info.title || "").toLowerCase();
+            const description = (info.description || "").toLowerCase();
+            const authors = (info.authors || []).join(" ").toLowerCase();
+
+            return (
+                categories.some(item => item.toLowerCase().includes(searchTerm)) ||
+                title.includes(searchTerm) ||
+                description.includes(searchTerm) ||
+                authors.includes(searchTerm)
+            );
+        })
+    );
+}
+
 async function getBooks(query, containerId) {
 
     const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=8&key=${API_KEY}`;
@@ -76,6 +114,29 @@ async function getBooks(query, containerId) {
     } catch (error) {
 
         console.error("Error loading books:", error);
+
+        try {
+            const backupBooks = await loadBackupBooks();
+            const backupKeyword = extractBackupKeyword(query);
+            const matchedBooks = backupBooks.filter(book => {
+                const info = book.volumeInfo || {};
+                const categories = (info.categories || []).join(" ").toLowerCase();
+                const title = (info.title || "").toLowerCase();
+                const description = (info.description || "").toLowerCase();
+                const authors = (info.authors || []).join(" ").toLowerCase();
+
+                return (
+                    categories.includes(backupKeyword) ||
+                    title.includes(backupKeyword) ||
+                    description.includes(backupKeyword) ||
+                    authors.includes(backupKeyword)
+                );
+            });
+
+            displayBooks((matchedBooks.length ? matchedBooks : backupBooks).slice(0, 8), containerId);
+        } catch (backupError) {
+            console.error("Error loading backup books:", backupError);
+        }
 
     }
 }
@@ -114,9 +175,15 @@ async function getCategoryBooks(category) {
 
         console.error("Error loading category books:", error);
 
-        container.innerHTML = `
-            <p>Unable to load books. Please try again.</p>
-        `;
+        try {
+            const backupBooks = await filterBackupBooksByCategory(category);
+            displayBooks(backupBooks.slice(0, 8), "#category-books");
+        } catch (backupError) {
+            console.error("Error loading backup category books:", backupError);
+            container.innerHTML = `
+                <p>Unable to load books. Please try again.</p>
+            `;
+        }
     }
 }
 document.addEventListener("click", (event) => {
