@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVerse | Discover Great Stories</title>
+    <meta name="description" content="Discover, search, and save books with BookVerse's featured picks and trending categories.">
+    <meta name="author" content="Isabella Arrieta">
+    <meta property="og:title" content="Bookverse">
+    <meta property="og:description" content="Discover, search, and save books with BookVerse's featured picks and trending categories.">
+    <meta property="og:image" content="images/logo-bookverse.png">
+    <meta property="og:url" content="index.html">
+    <link rel="icon" href="images/logo-bookverse.png" type="image/png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/hamburguer.js" defer></script>
+    <script type="module" src="scripts/book.js"defer></script>
+</head>
+<body>
+    <header>
+        <div class="site-name">
+            <img src="images/logo-big3.png" alt="Bookverse logo" width="224" height="81">
+        </div>
+        <button id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+                <section class="hero">
+            <div class="hero-content">
+
+                <h1>Discover Your Next Great Read</h1>
+
+                <p>
+                    Explore new stories, discover popular books,
+                    and find your next favorite read.
+                </p>
+
+                <a href="search.html" class="search-book-btn">
+                    Search a Book
+                </a>
+
+            </div>
+        </section>
+
+
+        <section class="search-results-section" id="search-results-section">
+
+            <h2 id="search-title">
+                Search Results
+            </h2>
+
+            <div id="search-results" class="book-grid">
+            </div>
+
+        </section>
+
+        <section class="categories">
+            <h2>Explore Categories</h2>
+
+            <div class="category-list">
+                <button class="category-btn" data-category="fiction">
+                    Fiction
+                </button>
+
+                <button class="category-btn" data-category="fantasy">
+                    Fantasy
+                </button>
+
+                <button class="category-btn" data-category="mystery">
+                    Mystery
+                </button>
+
+                <button class="category-btn" data-category="romance">
+                    Romance
+                </button>
+
+                <button class="category-btn" data-category="science fiction">
+                    Sci-Fi
+                </button>
+
+                <button class="category-btn" data-category="history">
+                    History
+                </button>
+            </div>
+        </section>
+        <section id="category-results" class="book-section category-results">
+
+            <div class="category-results-header">
+
+                <div>
+                    <h2 id="category-title">Explore Books</h2>
+
+                    <p id="category-description">
+                        Choose a category to discover new books.
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="category-books" class="book-grid">
+
+            </div>
+
+        </section>
+        <section class="book-section">
+            <h2>Featured Books</h2>
+
+            <div id="featured-books" class="book-grid">
+            </div>
+        </section>
+
+        <section class="book-section">
+            <h2>Trending Books</h2>
+
+            <div id="trending-books" class="book-grid">
+                </div>
+        </section>
+
+
+        <section class="book-section">
+            <h2>Personalized Recommendations</h2>
+
+            <div id="recommended-books" class="book-grid">
+                </div>
+        </section>
+
+        <section class="reading-list">
+
+            <h2>Explore More</h2>
+
+            <div class="reading-list-options">
+                <a href="favorites.html">Favorites</a>
+
+                <a href="about.html">About</a>
+            </div>
+
+        </section>
+    </main>
+    <div id="book-modal" class="modal">
+            <div class="modal-content">
+
+                <button id="close-modal" class="close-modal" aria-label="Close">
+                    &times;
+                </button>
+
+                <div id="modal-book"></div>
+
+            </div>
+        </div>
+    <footer>
+    <section class="contact">
+        <h2>BookVerse</h2>
+        <p>Discover your next great read.</p>
+        <p>contact@bookverse.com</p>
+    </section>
+
+    <section class="social">
+        <h2>Follow Us</h2>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/icons8-facebook-50.png" alt="Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/icons8-instagram-50.png" alt="Instagram">
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/icons8-linkedin-50.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+    <section class="development">
+        <p>WDD231 Class Project</p>
+        <p>Isabella Arrieta</p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p>&copy; <span id="currentyear"></span> BookVerse</p>
+        <p class="last-modified">
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </section>
+</footer>
+</body>
+</html>
